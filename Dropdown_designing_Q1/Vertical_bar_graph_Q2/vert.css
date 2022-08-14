@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #9d85f5; */
+    background-image: linear-gradient(to right top, rgb(43, 51, 59), gray, whitesmoke);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container {
+    position: relative;
+    width: 550px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.graph {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(5, 129, 87), rgb(8, 252, 252), rgb(229, 248, 241));
+}
+
+/* .graph .candle {
+    position: relative;
+    width: 100%;
+    height: calc(400px/4);
+    border-top: 1px solid rgb(6, 241, 245);
+    z-index: 1;
+}
+
+.graph .candle::before {
+    content: attr(value);
+    position: absolute;
+    left: -80px;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    color: #222;
+} */
+
+.base {
+    position: absolute;
+    width: calc(100% + 5px);
+    height: 18px;
+    top: 100%;
+    left: 0;
+    background-color: rgba(6, 251, 210, 0.2);
+    clip-path: polygon(0%, 0%, 98.3%, 0%, 99.5%, 100%, 0.7%, 100%);
+    z-index: 2;
+}
+
+.graph_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    z-index: 3;
+}
+
+.graph_container .candlestick {
+    position: relative;
+    width: 40px;
+    height: 100%;
+    background-color: rgb(72, 231, 14);
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,
+     rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0) 100%, );
+    border-radius: 100px / 30px;
+    bottom: -13px;
+    z-index: 4;
+    animation: animate 1.3s cubic-bezier(1,0,0.5,1);
+}
+@keyframes animate{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }   
+}
+
+.graph_container .candlestick::before{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 12px;
+    top: 0;
+    left: 0;
+    border-radius: 100px/30px;
+    background-color: rgb(1, 122, 5);
+}
+
+.graph_container .candlestick::after{
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: 12px;
+    bottom: 0;
+    left: 0;
+    border-radius: 100px/30px;
+    background-color: rgb(3, 110, 7);
+}
+
+.labels{
+    position: absolute;
+    width: 100%;
+    bottom: -45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.labels div{
+    color: #222;
+    text-align: center;
+    font-weight: 500;
+    transform: rotate(-30%);
+
+}
+
+.container .bar{
+    font-size: 30px;
+    margin-top: 400px;
+    text-align: center;
+    color: rgb(121, 56, 2);
+    border-bottom: 3px dotted rgb(121, 56, 2);
+}
