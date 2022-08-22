@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap');
 
-*{
+* {
     font-family: 'Baloo Bhai 2', cursive;
     padding: 0;
 }
 
-body{
+body {
     background: url('https://images.pexels.com/photos/4492129/pexels-photo-4492129.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-.header{
+.header {
     background-color: rgb(86, 4, 4);
     background-image: radial-gradient(rgb(50, 2, 2), rgb(226, 118, 118));
     color: whitesmoke;
@@ -24,31 +24,31 @@ body{
     margin-bottom: 30px;
 }
 
-.header:hover{
-    background-image: linear-gradient(to bottom,rgb(50, 2, 2), rgb(226, 118, 118) ) ;
+.header:hover {
+    background-image: linear-gradient(to bottom, rgb(50, 2, 2), rgb(226, 118, 118));
     color: wheat;
     cursor: pointer;
 }
 
-.navbar{
+.navbar {
     margin-top: 90px;
     width: 100%;
     background-color: #966F33;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to left bottom,#966F33 ,#91836d );
+    background-image: linear-gradient(to left bottom, #966F33, #91836d);
 
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     list-style: none;
     margin-left: 40px;
     justify-content: left;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     font-size: 1.3rem;
     margin-right: 30px;
@@ -57,20 +57,20 @@ body{
     padding: 0px 10px;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     background-color: #e4cba2;
     border-radius: 10px;
     border: 1px solid rgb(86, 4, 4);
     color: rgb(50, 2, 2);
     font-weight: bold;
-    
+
 }
 
-.drop{
+.drop {
     display: none;
 }
 
-.navbar ul li:hover .drop{
+.navbar ul li:hover .drop {
     display: block;
     position: absolute;
     margin-left: -30px;
@@ -78,14 +78,14 @@ body{
 
 }
 
-.navbar ul li:hover .drop ul{
+.navbar ul li:hover .drop ul {
     display: block;
     margin-top: 15px;
 }
 
-.navbar ul li:hover .drop ul li{
+.navbar ul li:hover .drop ul li {
     width: 150px;
-    background-image: linear-gradient(to top, #5d3a04 ,#94918c );
+    background-image: linear-gradient(to top, #5d3a04, #94918c);
     align-items: flex-start;
     border-radius: 10px;
     margin-left: 0;
