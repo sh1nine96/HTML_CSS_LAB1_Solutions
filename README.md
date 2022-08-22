@@ -15,3 +15,14 @@ properties, etc., <br>
   Create 3 such graphs with 30%, 40% and 80%. <br>
 > Below percentage print h1 with text “Bar Plot” <br>
 > Position it in the centre of the page. <br>
+
+<hr>
+
+#### To watch the video of the project <br>
+
+[Click Here](https://drive.google.com/file/d/1VMby51cbYBs262R47WLUYO80wrTMHH0n/view?usp=sharing)
+<br>
+
+## Thank you
+ **_I will really appreciate the suggestions and advices._**
+ 
